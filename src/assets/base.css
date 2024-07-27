@@ -50,6 +50,21 @@
   }
 }
 
+@font-face {
+  font-family: 'my-hwzs';
+  src: url('hwzs.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'my-hwfs';
+  src: url('hwfs.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'my-fztys';
+  src: url('fztys.ttf') format('truetype');
+}
+
 *,
 *::before,
 *::after {

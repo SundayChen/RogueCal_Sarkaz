@@ -121,7 +121,7 @@
 .rules h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: '华文中宋';
+  font-family: 'my-hwzs';
   margin-top: 1rem;
 }
 
@@ -147,6 +147,6 @@
 }
 
 .psItem h3 {
-  font-family: '华文中宋';
+  font-family: 'my-hwzs';
 }
 </style>

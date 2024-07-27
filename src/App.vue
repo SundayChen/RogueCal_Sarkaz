@@ -5,12 +5,12 @@ import FooterView from './views/FooterView.vue';
 </script>
 
 <template>
-  <img alt="bg" class="bg" src="@/assets/bg.png"/>
+  <img alt="bg" class="bg" src="@/assets/bg.png" />
   <div class="mainPage">
     <header>
       <img alt="logo" class="logo" src="@/assets/logo.png" height="160" />
       <div>
-        <HeaderView title="可汗杯 萨卡兹肉鸽赛季" />
+        <HeaderView title_1="可汗杯" title_2="萨卡兹肉鸽赛季" />
 
         <nav class="links">
           <RouterLink to="/">分数计算器</RouterLink>
@@ -29,10 +29,11 @@ import FooterView from './views/FooterView.vue';
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   z-index: -1;
   opacity: 0.5;
 }
+
 .mainPage {
   display: flex;
   flex-direction: column;
@@ -43,7 +44,7 @@ import FooterView from './views/FooterView.vue';
 header {
   display: flex;
   flex-direction: row;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .logo {

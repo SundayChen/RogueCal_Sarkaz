@@ -1,12 +1,13 @@
 <script setup lang="ts">
 defineProps<{
-  title: string
+  title_1: string
+  title_2: string
 }>()
 </script>
 
 <template>
   <div class="headerView">
-    <h1>{{ title }}</h1>
+    <h1><span class="yellow">{{ title_1 }}</span>{{ ' ' }}{{ title_2 }}</h1>
     <h3>
       活动策划：
       <a href="https://space.bilibili.com/122574257" target="_blank" rel="noopener">B站@你有五根棒棒糖嘛w</a>
@@ -17,13 +18,17 @@ defineProps<{
 <style scoped>
 h1 {
   font-weight: 500;
-  font-size: 2.8rem;
-  font-family: "方正特雅宋_GBK";
+  font-size: 3rem;
+  font-family: "my-fztys";
+}
+
+.yellow {
+  color: #ffa000;
 }
 
 h3 {
   font-size: 1.2rem;
-  font-family: '华文仿宋';
+  font-family: 'my-hwfs';
   font-weight: 700;
 }
 
