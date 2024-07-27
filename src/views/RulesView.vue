@@ -98,7 +98,7 @@
 <style>
 .order {
   font-weight: 700;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'my-hwzs';
   font-size: 1.2rem;
 }
 

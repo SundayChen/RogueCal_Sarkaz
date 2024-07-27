@@ -1,0 +1,60 @@
+{
+  "teamScore": [
+    {
+      "name": "MYGO",
+
+      "normal_player": "千早爱音",
+      "normal_settlement": 2750,
+      "normal_extra": 250,
+      "normal_score": 0,
+      "normal_startTeam": "远程战术分队",
+      "normal_startOperator": "维什戴尔",
+      "normal_end": [2, 3],
+
+      "speed_player": "高松灯",
+      "speed_isFinish": true,
+      "speed_settlement": 2000,
+      "speed_time": "00:20:00",
+      "speed_score": 0,
+      "speed_startTeam": "蓝图测绘分队",
+      "speed_startOperator": "逻各斯",
+      "speed_end": [1],
+
+      "ban_player": "长崎素世",
+      "ban_settlement": 2500,
+      "ban_extra": 500,
+      "ban_score": 0,
+      "ban_startTeam": "破坏战术分队",
+      "ban_startOperator": "阿斯卡纶",
+      "ban_end": [2]
+    },
+    {
+      "name": "有刺无刺",
+
+      "normal_player": "安和昴",
+      "normal_settlement": 2750,
+      "normal_extra": 250,
+      "normal_score": 0,
+      "normal_startTeam": "远程战术分队",
+      "normal_startOperator": "维什戴尔",
+      "normal_end": [1, 3],
+
+      "speed_player": "河原木桃香",
+      "speed_isFinish": true,
+      "speed_settlement": 2000,
+      "speed_time": "00:20:00",
+      "speed_score": 0,
+      "speed_startTeam": "蓝图测绘分队",
+      "speed_startOperator": "银灰",
+      "speed_end": [1],
+
+      "ban_player": "井芹仁菜",
+      "ban_settlement": 2500,
+      "ban_extra": 500,
+      "ban_score": 0,
+      "ban_startTeam": "破坏战术分队",
+      "ban_startOperator": "妮芙",
+      "ban_end": [3]
+    }
+  ]
+}

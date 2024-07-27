@@ -12,10 +12,12 @@ const router = createRouter({
     {
       path: '/rules',
       name: 'rules',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/RulesView.vue')
+    },
+    {
+      path: '/score',
+      name: 'score',
+      component: () => import('../views/ScoreBoard.vue')
     }
   ]
 })

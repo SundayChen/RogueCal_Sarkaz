@@ -15,6 +15,7 @@ import FooterView from './views/FooterView.vue';
         <nav class="links">
           <RouterLink to="/">分数计算器</RouterLink>
           <RouterLink to="/rules">比赛规则</RouterLink>
+          <RouterLink to="/score">得分板</RouterLink>
         </nav>
       </div>
     </header>
