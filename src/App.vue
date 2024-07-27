@@ -10,7 +10,7 @@ import FooterView from './views/FooterView.vue';
     <header>
       <img alt="logo" class="logo" src="@/assets/logo.png" height="160" />
       <div>
-        <HeaderView title_1="可汗杯" title_2="萨卡兹肉鸽赛季" />
+        <HeaderView title_1="可汗杯" title_2="萨卡兹肉鸽赛季#1" />
 
         <nav class="links">
           <RouterLink to="/">分数计算器</RouterLink>

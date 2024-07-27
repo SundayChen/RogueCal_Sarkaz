@@ -6,7 +6,9 @@
         <span class="order">1. </span>
         本次比赛由
         <a href="https://space.bilibili.com/122574257">你有五根棒棒糖嘛w</a>
-        策划，旨在为群友提供一个展示自己技术的平台
+        策划，旨在
+        <span class="strickout">找一个借口攻击群友</span>
+        为群友提供一个展示自己技术的平台
       </p>
       <p>
         <span class="order">2. </span>
@@ -106,6 +108,10 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.strickout {
+  text-decoration: line-through;
 }
 
 .ruleMultiRow {

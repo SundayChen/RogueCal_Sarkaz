@@ -20,6 +20,7 @@ h1 {
   font-weight: 500;
   font-size: 3rem;
   font-family: "my-fztys";
+  margin-left: 4rem;
 }
 
 .yellow {
