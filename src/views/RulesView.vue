@@ -95,7 +95,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .order {
   font-weight: 700;
   font-family: 'my-hwzs';

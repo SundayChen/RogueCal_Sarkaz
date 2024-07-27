@@ -1,48 +1,37 @@
+<script setup lang='ts'>
+import { ref } from 'vue';
+import Ban from '../components/scoreBoard/ban.vue';
+import Normal from '../components/scoreBoard/normal.vue';
+import Speed from '../components/scoreBoard/speed.vue';
+
+const selected = ref<string[]>(['normal', 'normal']);
+const tabs = ['normal', 'speed', 'ban'];
+</script>
+
 <template>
     <div class="container">
-        <div v-if="score" v-for="item in score" class="team">
+        <div v-if="score" v-for="(item, index) in score" class="team">
             <div class="name_score">
-                <h2>队名: {{ item.name }}</h2>
-                <h2>总分：{{ item.normal_score + item.speed_score + item.ban_score }}</h2>
+                <h1>队名: {{ item.name }}</h1>
+                <h1>总分：{{ item.normal_score + item.speed_score + item.ban_score }}</h1>
             </div>
+            <nav class="links">
+                <a v-for="(tab, tabIndex) in tabs" :key="tabIndex" @click="selected[index] = tab"
+                    :class="{ selected: selected[index] === tab }">
+                    {{ tab == 'normal' ? '普通赛道' : tab == 'speed' ? '竞速赛道' : '速通赛道' }}
+                </a>
+            </nav>
             <div class="detail">
-                <div>
-                    <h3>普通赛道</h3>
-                    <p><span class="item">讲述者：</span>{{ item.normal_player }}</p>
-                    <p><span class="item">开局主力：</span>{{ item.normal_startOperator }}</p>
-                    <p><span class="item">开局分队：</span>{{ item.normal_startTeam }}</p>
-                    <p><span class="item">完成结局：</span>{{ item.normal_end }}</p>
-                    <p><span class="item">结算分：</span>{{ item.normal_settlement }}</p>
-                    <p><span class="item">额外分：</span>{{ item.normal_extra }}</p>
-                    <p><span class="item">普通赛道得分：</span>{{ item.normal_score }}</p>
-                </div>
-                <div>
-                    <h3>竞速赛道</h3>
-                    <p><span class="item">讲述者：</span>{{ item.speed_player }}</p>
-                    <p><span class="item">开局主力：</span>{{ item.speed_startOperator }}</p>
-                    <p><span class="item">开局分队：</span>{{ item.speed_startTeam }}</p>
-                    <p><span class="item">完成结局：</span>{{ item.speed_end }}</p>
-                    <p><span class="item">结算分：</span>{{ item.speed_settlement }}</p>
-                    <p><span class="item">时间：</span>{{ item.speed_time }}</p>
-                    <p><span class="item">竞速赛道得分：</span>{{ item.speed_score }}</p>
-                </div>
-                <div>
-                    <h3>自限赛道</h3>
-                    <p><span class="item">讲述者：</span>{{ item.ban_player }}</p>
-                    <p><span class="item">开局主力：</span>{{ item.ban_startOperator }}</p>
-                    <p><span class="item">开局分队：</span>{{ item.ban_startTeam }}</p>
-                    <p><span class="item">完成结局：</span>{{ item.ban_end }}</p>
-                    <p><span class="item">结算分数：</span>{{ item.ban_settlement }}</p>
-                    <p><span class="item">额外分数：</span>{{ item.ban_extra }}</p>
-                    <p><span class="item">自限赛道得分：</span>{{ item.ban_score }}</p>
-                </div>
+                <Normal v-if="selected[index] === 'normal'" :item="item" />
+                <Speed v-else-if="selected[index] === 'speed'" :item="item" />
+                <Ban v-else-if="selected[index] === 'ban'" :item="item" />
             </div>
         </div>
         <p v-else>加载中...</p>
     </div>
 </template>
 
-<style>
+<style scoped>
 .container {
     display: flex;
     flex-direction: column;
@@ -61,34 +50,49 @@
     margin-bottom: 3em;
 }
 
-.team h2 {
+.team h1 {
     font-family: 'my-fztys';
     text-align: center;
+    font-size: 2rem;
 }
 
-.item {
-    font-family: 'my-hwfs';
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.detail {
+.links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 8rem;
+    justify-content: center;
 }
 
-.detail h3 {
-    font-family: 'my-hwzs';
+nav {
+    width: 100%;
+    font-size: 15px;
     text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+a {
+    border: none;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'my-hwzs';
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+a.hover {
+    background-color: transparent;
+}
+a.selected {
+    color: var(--color-text);
+    font-weight: 700;
+    pointer-events: none;
 }
 </style>
   
 <script lang="ts">
 import { defineComponent } from 'vue';
 
-interface Team {
+export interface Team {
     name: string;
 
     normal_player: string;

@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vh;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-family: "my-hwzs";
+}
+
+.item {
+  font-size: 1.3rem;
+  font-family: "my-hwfs";
+  font-weight: 600;
+}
+
+.final {
+  font-size: 2.2rem;
+  font-family: "my-hwfs";
+  font-weight: 600;
+  color: #2fa7da;
+}
+
+.newLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row_part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.col_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
