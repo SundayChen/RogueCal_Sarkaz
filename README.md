@@ -1,2 +1,10 @@
-## RogueCal_Sarkaz
-This is the README file of this Vue project.
+## 简介
+这是一个基于 **Vue** 框架，并使用 **Typescript** 开发的web程序，用来作为明日方舟集成战略主题 **萨卡兹的无终奇语** 比赛 **“可汗杯”** 的主题页，包含分数计算器、规则介绍与分数展示。
+
+## 运行项目
+git clone后，在项目根目录下运行：
+```
+$ npm install
+$ npm run dev
+```
+（**$** 请勿复制），根据命令行中显示的http路径即可访问。
