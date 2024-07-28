@@ -1,0 +1,52 @@
+.calTitle {
+    font-size: 1.5rem;
+    font-family: "my-hwzs";
+    text-align: center;
+}
+
+.calWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-self: self-start;
+  width: 50vh;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+}
+
+.banWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-self: self-start;
+    gap: 1rem;
+}
+
+.numberInput {
+    width: 6rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+}
+
+.row_item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.scoresDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finalScore {
+    font-size: 1.5rem;
+    font-family: "my-hwfs";
+    font-weight: 600;
+    color: #2fa7da;
+}
