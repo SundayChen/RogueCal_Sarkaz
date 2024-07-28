@@ -158,7 +158,7 @@ export default defineComponent({
                 } else
                     team.speed_score = team.speed_settlement > 2400 ? 2400 : team.speed_settlement;
 
-                team.ban_score = Math.ceil((team.ban_settlement + team.ban_extra) * 1.1);
+                team.ban_score = Math.ceil((team.ban_settlement + team.ban_extra) * 11 / 10);
             }
         }
     },

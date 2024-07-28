@@ -21,7 +21,7 @@ const ban_finalScore = computed(() => {
         ((ban_secondEnding.value && ban_thirdEnding.value) ? 100 : 0) +
         ban_operator.value.reduce((acc, cur) => acc + (cur ? 50 : 0), 0) +
         (ban_blueprint.value ? 100 : 0) + (ban_noRetry.value ? 50 : 0) + ban_settlement.value;
-    return Math.ceil(this_score * 1.1);
+    return Math.ceil(this_score * 11 / 10);
 })
 
 const profession = ['先锋', '近卫', '重装', '狙击', '术师', '医疗', '辅助', '特种'];
