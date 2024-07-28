@@ -12,13 +12,13 @@
       "normal_end": [2, 3],
 
       "speed_player": "高松灯",
-      "speed_isFinish": true,
+      "speed_isFinish": false,
       "speed_settlement": 2000,
       "speed_time": "00:20:00",
       "speed_score": 0,
       "speed_startTeam": "蓝图测绘分队",
       "speed_startOperator": "逻各斯",
-      "speed_end": [1],
+      "speed_end": [],
 
       "ban_player": "长崎素世",
       "ban_settlement": 2500,
