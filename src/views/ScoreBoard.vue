@@ -18,7 +18,7 @@ const tabs = ['normal', 'speed', 'ban'];
             <nav class="links">
                 <a v-for="(tab, tabIndex) in tabs" :key="tabIndex" @click="selected[index] = tab"
                     :class="{ selected: selected[index] === tab }">
-                    {{ tab == 'normal' ? '普通赛道' : tab == 'speed' ? '竞速赛道' : '速通赛道' }}
+                    {{ tab == 'normal' ? '普通赛道' : tab == 'speed' ? '速通赛道' : '自限赛道' }}
                 </a>
             </nav>
             <div class="detail">
